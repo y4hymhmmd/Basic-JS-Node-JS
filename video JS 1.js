@@ -232,19 +232,27 @@ console.log(x < 20);
 // }
 
 
-var item = prompt('masukkan nama makanan / minuman : \n ( cth: nasi, daging, susu, hamburger, softdrink)');
+// var item = prompt('masukkan nama makanan / minuman : \n ( cth: nasi, daging, susu, hamburger, softdrink)');
 
-switch(item.toLowerCase()){
-    case 'nasi':
-    case 'daging':
-    case'susu':
-        alert('makan / minuman SEHAT');
-        break;
-    case 'hamburger':
-    case'softdrink':
-        alert('makanan / minuman TIDAK SEHAT');
-        break;
-    default:
-        alert('maaf, item yang anda masukkan belum terdaftar');
-        break;
+// switch(item.toLowerCase()){
+//     case 'nasi':
+//     case 'daging':
+//     case'susu':
+//         alert('makan / minuman SEHAT');
+//         break;
+//     case 'hamburger':
+//     case'softdrink':
+//         alert('makanan / minuman TIDAK SEHAT');
+//         break;
+//     default:
+//         alert('maaf, item yang anda masukkan belum terdaftar');
+//         break;
+// }
+var s = '';
+for( var i = 10; i > 0; i--) {
+    for (var j = 0; j <= i; j++){
+        s += '*';
+    }
+    s += '\n';
 }
+console.log(s);
