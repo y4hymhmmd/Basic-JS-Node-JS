@@ -9,18 +9,22 @@
     border: 1px solid black;
     margin: 58px auto;
     transition: .3s width,        .3s height .3s,        .3s margin-top .3s,        1s background-color;
-    -webkit-transition: .3s width,;
-    -moz-transition: .3s width,;
-    -ms-transition: .3s width,;
-    -o-transition: .3s width,;
+    -webkit-transition: .3s width,        .3s height .3s,        .3s margin-top .3s,        1s background-color;
+    -moz-transition: .3s width,        .3s height .3s,        .3s margin-top .3s,        1s background-color;
+    -ms-transition: .3s width,        .3s height .3s,        .3s margin-top .3s,        1s background-color;
+    -o-transition: .3s width,        .3s height .3s,        .3s margin-top .3s,        1s background-color;
 }
 
-.size{
+
+.size {
     width: 150px;
     height: 150px;
     margin-top: 25px;
 }
 
 .caption {
-    background-image: ;
+    background-image: url(./meme.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
