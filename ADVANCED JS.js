@@ -252,7 +252,7 @@
 
 //filter, map and reduce 
 
-const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
+// const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 
 //for
 // const newAngka = [];
@@ -283,8 +283,128 @@ const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 
 //method chaining
 //cari angka >5 kailikan 3 jumlahkan
-const hasil = angka.filter(a => a > 5)
-    .map(a => a * 3)
-    .reduce((acc, cur) => acc + cur);
+// const hasil = angka.filter(a => a > 5)
+//     .map(a => a * 3)
+//     .reduce((acc, cur) => acc + cur);
 
-console.log(hasil);
+// console.log(hasil);
+
+
+// //template literal / template sting
+// const nama = 'yahya';
+// const umur = 17
+
+// // console.log(`Halo, nama saya ${nama}, dan saya ${umur} tahun.`);
+// console.log('Halo, nama saya ' + nama + ', dan saya ' + umur + 'tahun.');
+
+// //Embedded Expression
+// console.log(`${1 + 1}`);
+// console.log(`${alert('halo')}`);
+// const x = 11;
+// console.log(`${(x & 2 == 0) ? 'genap' : 'genap'}`);
+
+
+//HTML fragments
+// const mhs = {
+//     nama: 'yahya',
+//     umur: 17,
+//     nrp: '74190348659',
+//     email: 'mhs@gmail.com',
+// };
+
+// const el = `<div class="mhs">
+//     <h2>${mhs.nama}</h2>
+//     <span class="nrp">${mhs.nrp}</span>
+// </div>`
+
+//2 looping
+// const mhs = [
+//     {
+//         nama: 'yahya',
+//         email: 'yahy@gmail.com'
+//     },
+//     {
+//         nama: 'anto',
+//         email: 'nto@gmail.com'
+//     },
+//     {
+//         nama: 'budi',
+//         email: 'budi@gmail.com'
+//     }
+// ];
+
+// const el = `<div class="mhs">
+// ${mhs.map(m => `<ul>
+// <li>${m.nama}</li>
+// <li>${m.email}</li>
+// </ul>`).join('') }
+// </div>`;
+
+
+//3 conditionals
+//ternary
+// const lagu = {
+//     judul: 'tetap dalam jiwa',
+//     penyanyi: 'isyana sarasvati',
+//     feat: 'rayi putra'
+// }
+
+// const el = `<div class="lagu">
+// <ul>
+// <li>${lagu.penyanyi}</li>
+// <li>${lagu.judul} ${lagu.feat ? `(feat. ${lagu.feat})` : '' }</li>
+// </ul>
+// </div>`;
+
+
+
+//4 nested 
+// const mhs = {
+//     nama: 'yahya',
+//     semester: 5,
+//     mataKuliah: [
+//         'rekayasa web',
+//         'Analisis dan Perancangan Sistem Informasi',
+//         ' Pemrograman Sistem Interaktif',
+//         'Perancangan Sistem Berorientasi Object'
+//     ]
+// };
+
+// function cetakMataKuliah(mataKuliah) {
+//     return `
+//     <ol>
+//     ${mataKuliah.map(mk => `<li>${mk}</li>`).join('')}
+//     </ol>`
+// }
+
+// const el = `<div class="mhs">
+// <h2>${mhs.nama}</h2>
+//     <span class="semester">${mhs.semester}</span>
+//     <h4>Mata Kuliah :</h4>
+//     ${cetakMataKuliah(mhs.mataKuliah)}
+// </div > `;
+
+
+// document.body.innerHTML = el;
+
+
+// Tagged template
+// const nama = 'yahya';
+// const umur = 17;
+
+// function highlight(strings,...values) {
+//     // let result = '';
+//     // strings.forEach((str, i) => {
+//     //     result += `${str}${values[i] || ''}`;
+//     // });
+//     // return result;
+
+
+//     return strings.reduce((result, str, i) => `${result}${str}<span class="hl">
+//     ${values[i] || ''}</span>`, '');
+// }
+
+
+// const str = highlight`Halo, nama saya ${nama}, saya ${umur} tahun.`;
+
+// document.body.innerHTML = str;
