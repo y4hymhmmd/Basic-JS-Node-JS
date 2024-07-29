@@ -1,0 +1,23 @@
+[
+    {
+        "nama": "yahya",
+        "nrp": "043040023",
+        "email": "yahy@gmail.com",
+        "jurusan": "teknik informatika",
+        "idDosenWali": 1
+    },
+    {
+        "nama": "bayu",
+        "nrp": "043040024",
+        "email": "bayu@gmail.com",
+        "jurusan": "teknik informatika",
+        "idDosenWali": 2
+    },
+    {
+        "nama": "adit",
+        "nrp": "043040025",
+        "email": "adit@gmail.com",
+        "jurusan": "teknik elektro",
+        "idDosenWali": 2
+    }
+]
